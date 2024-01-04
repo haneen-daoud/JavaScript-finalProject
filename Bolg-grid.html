@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/minify.css">
+    
+    <link rel="stylesheet" href="assets/css/media-minify.css">  
+</head>
+
+<body>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">Scroll To Top</button>
+
+    <div class="prev-header d-flex justify-content-between align-items-center position-fixed px-3 w-100">
+        <div class="envato-logo  ">
+            <a>
+                <img
+                    src="assets/img/header-img/envato_market-dde916a48af7413e54aa058fe7ae6856752fca799da4bec355f00aea904bfa19.svg">
+            </a>
+        </div>
+        <div class="buy-now-link rounded-1 px-3 py-1"><a class="text-white text-decoration-none" href="#">Buy now</a>
+        </div>
+
+    </div>
+    <!--strt head contact-->
+    <div class="contact">
+        <div class="header-home p-0 ">
+            <div class="container con  p-0 ">
+                <div class="header-home-top ">
+
+                    <div class="nav-home bg-white d-flex align-items-center">
+
+                        <div class="social-box w-25">
+
+                            <ul class=" d-flex p-0 ">
+                                <a href="https://twitter.com/">
+                                    <li><i class="social-icon con  fa-brands fa-twitter text-light "></i></li>
+                                </a>
+                                <a href="https://www.behance.net/">
+                                    <li><i class="social-icon  con fa-brands fa-behance text-light "></i></li>
+                                </a>
+                                <a href="https://www.instagram.com/">
+                                    <li><i class="social-icon  con fa-brands fa-instagram text-light "></i></li>
+                                </a>
+                            </ul>
+                        </div>
+
+                        <div class="nav-center d-flex align-items-center  ">
+                            <ul class="d-flex">
+                                <li class="list-menu-item me-5 pb-2">
+                                    <a href="#" class="text-uppercase text-black ">studio</a>
+                                    <ul class="ul-box rounded-3 position-absolute ">
+                                        <li><a href="Home.html">profolio</a></li>
+                                        <li><a href="portfoli-detail.html">profolio-detail</a></li>
+                                    </ul>
+    
+                                </li>
+                                <li class="list-menu-item work me-5 pb-2">
+                                    <a href="#" class="text-uppercase text-black">works</a>
+                                    <ul class="ul-box rounded-3 position-absolute ">
+                                        <li><a href="about.html">about us</a></li>                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="nav-center-img">
+                                <a><img src="assets/img/contact-image/logo-2.webp" alt="logo img in contact page"></a>
+                            </div>
+                            <ul class="d-flex">
+                                <li class="list-menu-item me-5 pb-2">
+                                    <a href="#" class="text-uppercase text-black">news</a>
+                                    <ul class="ul-box rounded-3 position-absolute ">
+                                        <li><a href="Bolg-grid.html">our blog</a></li>
+                                        <li><a href="portfoli-detail.html">blog detail</a></li>
+                                    </ul>
+                                </li>
+                                <li class="list-menu-item me-5 pb-2">
+                                    <a href="contact.html" class="text-uppercase text-black">contact</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-footer d-flex justify-content-end w-25 ">
+                            <ul class="d-flex language-items">
+                                <li class="list-menu-item eng-language ps-4">
+                                    <a href="#" class="text-uppercase text-light">eng</a>
+                                </li>
+                                <li class="list-menu-item ps-5 ">
+                                    <a href="#" class="text-uppercase text-light">fra</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="contact-content text-uppercase text-center ">
+                        <div class="">
+                            <h2 class="title-contact">news</h2>
+
+                            <ul class="d-flex justify-content-center contact-link">
+                                <li class="ms-2  "><a href="Home.html" class="text-light contact-link-home">home</a>
+                                </li>
+                                <span class="ms-2 text-light"> / </span>
+                                <li class="ms-2"><a href="contact.html" class="text-black">news</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--start blog-content-->
+    <div class="blog-content">
+        <div class="container">
+            <ul class="nav nav-tabs justify-content-center border-0" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">all</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">news</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                        type="button" role="tab" aria-controls="contact-tab-pane"
+                        aria-selected="false">products</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane"
+                        type="button" role="tab" aria-controls="disabled-tab-pane"
+                        aria-selected="false">inspiration</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="comm-tab" data-bs-toggle="tab"
+                        data-bs-target="#comm-tab-pane" type="button" role="tab" aria-controls="comm-tab-pane"
+                        aria-selected="false">community</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="others-tab" data-bs-toggle="tab" data-bs-target="#others-tab-pane"
+                        type="button" role="tab" aria-controls="others-tab-pane" aria-selected="false">others</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                    tabindex="0">
+
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                            <div class="news-item ">
+                                <div class="image">
+                                    <a href="#">
+                                        <img src="assets/img/blog-image/news-1.webp" class="w-100"
+                                            alt="group of people"></a>
+                                </div>
+
+                                <div class="news-title mt-3">
+                                    INSPIRATION
+                                </div>
+
+                                <a href="blog-detail.html" class="text-black">How to improve the flow of UI/UX &amp;
+                                    delivery its in your team in way effective</a>
+                                <div class="date">December 25, 2023</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                            <div class="news-item ">
+                                <div class="image">
+                                    <a href="#">
+                                        <img src="assets/img/blog-image/news-2.webp" class="w-100"
+                                            alt="group of people"></a>
+                                </div>
+
+                                <div class="news-title mt-3">
+                                    PRODUCTS
+                                </div>
+
+                                <a href="blog-detail.html" class="text-black">Obero become 1st winner at CSS Award with Uber cases in 2023</a>
+                                <div class="date">December 16, 2023</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                            <div class="news-item ">
+                                <div class="image">
+                                    <a href="#">
+                                        <img src="assets/img/blog-image/news-3.webp" class="w-100"
+                                            alt="group of people"></a>
+                                </div>
+
+                                <div class="news-title mt-3">
+                                    COMMUNITY
+                                </div>
+
+                                <a href="blog-detail.html" class="text-black">How to choose stock photos fit with your project. Color, blending, restock, etc.</a>
+                                <div class="date">November 24, 2023</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                            <div class="news-item ">
+                                <div class="image">
+                                    <a href="#">
+                                        <img src="assets/img/blog-image/news-4.webp" class="w-100"
+                                            alt="group of people"></a>
+                                </div>
+
+                                <div class="news-title mt-3">
+                                    INSPIRATION
+                                </div>
+
+                                <a href="blog-detail.html" class="text-black">Best 20 Excellent Photographer at Claudio Schwarz Award in Paris, France</a>
+                                <div class="date">November 22, 2023</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                            <div class="news-item ">
+                                <div class="image">
+                                    <a href="#">
+                                        <img src="assets/img/blog-image/news-5.webp" class="w-100"
+                                            alt="group of people"></a>
+                                </div>
+
+                                <div class="news-title mt-3">
+                                    NEWS
+                                </div>
+
+                                <a href="blog-detail.html" class="text-black">ABC Launch New Digital eCommerce Experience for Niken Athletic</a>
+                                <div class="date">November 7, 2023</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                            <div class="news-item ">
+                                <div class="image">
+                                    <a href="#">
+                                        <img src="assets/img/blog-image/news-6.webp" class="w-100"
+                                            alt="group of people"></a>
+                                </div>
+
+                                <div class="news-title mt-3">
+                                    PRODUCT
+                                </div>
+
+                                <a href="blog-detail.html" class="text-black">Obero become Winner of Best Portfolio Website 2019 on 99Design.com</a>
+                                <div class="date">November 3, 2023</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                            <div class="news-item ">
+                                <div class="image">
+                                    <a href="#">
+                                        <img src="assets/img/blog-image/news-7.webp" class="w-100"
+                                            alt="group of people"></a>
+                                </div>
+
+                                <div class="news-title mt-3">
+                                    COMMUNITY
+                                </div>
+
+                                <a href="blog-detail.html" class="text-black">Workflow & Enhance the User Experience with Design System</a>
+                                <div class="date">September 15, 2023</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                            <div class="news-item ">
+                                <div class="image">
+                                    <a href="#">
+                                        <img src="assets/img/blog-image/news-8.webp" class="w-100"
+                                            alt="group of people"></a>
+                                </div>
+
+                                <div class="news-title mt-3">
+                                    INSPIRATION
+                                </div>
+
+                                <a href="blog-detail.html" class="text-black">Predict Color Pantone 2023</a>
+                                <div class="date">September 4, 2023</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                            <div class="news-item ">
+                                <div class="image">
+                                    <a href="#">
+                                        <img src="assets/img/blog-image/news-9.webp" class="w-100"
+                                            alt="group of people"></a>
+                                </div>
+
+                                <div class="news-title mt-3">
+                                    NEWS
+                                </div>
+
+                                <a href="blog-detail.html" class="text-black">How to use lens combine light in the photography</a>
+                                <div class="date">August 29, 2023</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                            <div class="news-item ">
+                                <div class="image">
+                                    <a href="#">
+                                        <img src="assets/img/blog-image/news-10.webp" class="w-100"
+                                            alt="group of people"></a>
+                                </div>
+
+                                <div class="news-title mt-3">
+                                    PRODUCTS
+                                </div>
+
+                                <a href="blog-detail.html" class="text-black">Cocooil - Review</a>
+                                <div class="date">August 27, 2023</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                            <div class="news-item ">
+                                <div class="image">
+                                    <a href="#">
+                                        <img src="assets/img/blog-image/news-11.webp" class="w-100"
+                                            alt="group of people"></a>
+                                </div>
+
+                                <div class="news-title mt-3">
+                                    INSPIRATION
+                                </div>
+
+                                <a href="blog-detail.html" class="text-black">From animation to coding, easy or hard? 5 Things that you need to know about AE</a>
+                                <div class="date">August 20, 2023</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                            <div class="news-item ">
+                                <div class="image">
+                                    <a href="#">
+                                        <img src="assets/img/blog-image/news-12.webp" class="w-100"
+                                            alt="group of people"></a>
+                                </div>
+
+                                <div class="news-title mt-3">
+                                    PRODUCTS
+                                </div>
+
+                                <a href="blog-detail.html" class="text-black">How to combine Typography perfect for any design</a>
+                                <div class="date">August 16, 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" mt-5 d-flex justify-content-center number-box">
+                    <ul class="clearfix d-flex mt-5">
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li>...</li>
+                        <li><a href="#">15</a></li>
+                        <li><a href="#">16</a></li>
+                        <li class="next"><a href="#"><i class="fa-solid fa-angles-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+           
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+               <div class="row">
+                <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                    <div class="news-item ">
+                        <div class="image">
+                            <a href="#">
+                                <img src="assets/img/blog-image/news-2.webp" class="w-100"
+                                    alt="group of people"></a>
+                        </div>
+
+                        <div class="news-title mt-3">
+                            PRODUCTS
+                        </div>
+
+                        <a href="blog-detail.html" class="text-black">Obero become 1st winner at CSS Award with Uber cases in 2023</a>
+                        <div class="date">December 16, 2023</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                    <div class="news-item ">
+                        <div class="image">
+                            <a href="#">
+                                <img src="assets/img/blog-image/news-4.webp" class="w-100"
+                                    alt="group of people"></a>
+                        </div>
+
+                        <div class="news-title mt-3">
+                            INSPIRATION
+                        </div>
+
+                        <a href="blog-detail.html" class="text-black">Best 20 Excellent Photographer at Claudio Schwarz Award in Paris, France</a>
+                        <div class="date">November 22, 2023</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                    <div class="news-item ">
+                        <div class="image">
+                            <a href="#">
+                                <img src="assets/img/blog-image/news-7.webp" class="w-100"
+                                    alt="group of people"></a>
+                        </div>
+
+                        <div class="news-title mt-3">
+                            COMMUNITY
+                        </div>
+
+                        <a href="blog-detail.html" class="text-black">Workflow & Enhance the User Experience with Design System</a>
+                        <div class="date">September 15, 2023</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                    <div class="news-item ">
+                        <div class="image">
+                            <a href="#">
+                                <img src="assets/img/blog-image/news-10.webp" class="w-100"
+                                    alt="group of people"></a>
+                        </div>
+
+                        <div class="news-title mt-3">
+                            PRODUCTS
+                        </div>
+
+                        <a href="blog-detail.html" class="text-black">Cocooil - Review</a>
+                        <div class="date">August 27, 2023</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                    <div class="news-item ">
+                        <div class="image">
+                            <a href="#">
+                                <img src="assets/img/blog-image/news-12.webp" class="w-100"
+                                    alt="group of people"></a>
+                        </div>
+
+                        <div class="news-title mt-3">
+                            PRODUCTS
+                        </div>
+
+                        <a href="blog-detail.html" class="text-black">How to combine Typography perfect for any design</a>
+                        <div class="date">August 16, 2023</div>
+                    </div>
+                </div>
+               </div> 
+               <div class=" mt-5 d-flex justify-content-center number-box">
+                <ul class="clearfix d-flex mt-5">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li>...</li>
+                    <li><a href="#">15</a></li>
+                    <li><a href="#">16</a></li>
+                    <li class="next"><a href="#"><i class="fa-solid fa-angles-right"></i></a></li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                    <div class="news-item ">
+                        <div class="image">
+                            <a href="#">
+                                <img src="assets/img/blog-image/news-4.webp" class="w-100"
+                                    alt="group of people"></a>
+                        </div>
+
+                        <div class="news-title mt-3">
+                            INSPIRATION
+                        </div>
+
+                        <a href="blog-detail.html" class="text-black">Best 20 Excellent Photographer at Claudio Schwarz Award in Paris, France</a>
+                        <div class="date">November 22, 2023</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                    <div class="news-item ">
+                        <div class="image">
+                            <a href="#">
+                                <img src="assets/img/blog-image/news-6.webp" class="w-100"
+                                    alt="group of people"></a>
+                        </div>
+
+                        <div class="news-title mt-3">
+                            PRODUCT
+                        </div>
+
+                        <a href="blog-detail.html" class="text-black">Obero become Winner of Best Portfolio Website 2019 on 99Design.com</a>
+                        <div class="date">November 3, 2023</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                    <div class="news-item ">
+                        <div class="image">
+                            <a href="#">
+                                <img src="assets/img/blog-image/news-8.webp" class="w-100"
+                                    alt="group of people"></a>
+                        </div>
+
+                        <div class="news-title mt-3">
+                            INSPIRATION
+                        </div>
+
+                        <a href="blog-detail.html" class="text-black">Predict Color Pantone 2023</a>
+                        <div class="date">September 4, 2023</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                    <div class="news-item ">
+                        <div class="image">
+                            <a href="#">
+                                <img src="assets/img/blog-image/news-10.webp" class="w-100"
+                                    alt="group of people"></a>
+                        </div>
+
+                        <div class="news-title mt-3">
+                            PRODUCTS
+                        </div>
+
+                        <a href="blog-detail.html" class="text-black">Cocooil - Review</a>
+                        <div class="date">August 27, 2023</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                    <div class="news-item ">
+                        <div class="image">
+                            <a href="#">
+                                <img src="assets/img/blog-image/news-12.webp" class="w-100"
+                                    alt="group of people"></a>
+                        </div>
+
+                        <div class="news-title mt-3">
+                            PRODUCTS
+                        </div>
+
+                        <a href="blog-detail.html" class="text-black">How to combine Typography perfect for any design</a>
+                        <div class="date">August 16, 2023</div>
+                    </div>
+                </div>
+            </div>
+            <div class=" mt-5 d-flex justify-content-center number-box">
+                <ul class="clearfix d-flex mt-5">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li>...</li>
+                    <li><a href="#">15</a></li>
+                    <li><a href="#">16</a></li>
+                    <li class="next"><a href="#"><i class="fa-solid fa-angles-right"></i></a></li>
+                </ul>
+            </div>
+
+            </div>
+
+            <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
+                tabindex="0">
+                <div class="row">
+                <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                    <div class="news-item ">
+                        <div class="image">
+                            <a href="#">
+                                <img src="assets/img/blog-image/news-2.webp" class="w-100"
+                                    alt="group of people"></a>
+                        </div>
+
+                        <div class="news-title mt-3">
+                            PRODUCTS
+                        </div>
+
+                        <a href="blog-detail.html" class="text-black">Obero become 1st winner at CSS Award with Uber cases in 2023</a>
+                        <div class="date">December 16, 2023</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                    <div class="news-item ">
+                        <div class="image">
+                            <a href="#">
+                                <img src="assets/img/blog-image/news-5.webp" class="w-100"
+                                    alt="group of people"></a>
+                        </div>
+
+                        <div class="news-title mt-3">
+                            NEWS
+                        </div>
+
+                        <a href="blog-detail.html" class="text-black">ABC Launch New Digital eCommerce Experience for Niken Athletic</a>
+                        <div class="date">November 7, 2023</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                    <div class="news-item ">
+                        <div class="image">
+                            <a href="#">
+                                <img src="assets/img/blog-image/news-7.webp" class="w-100"
+                                    alt="group of people"></a>
+                        </div>
+
+                        <div class="news-title mt-3">
+                            COMMUNITY
+                        </div>
+
+                        <a href="blog-detail.html" class="text-black">Workflow & Enhance the User Experience with Design System</a>
+                        <div class="date">September 15, 2023</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                    <div class="news-item ">
+                        <div class="image">
+                            <a href="#">
+                                <img src="assets/img/blog-image/news-9.webp" class="w-100"
+                                    alt="group of people"></a>
+                        </div>
+
+                        <div class="news-title mt-3">
+                            NEWS
+                        </div>
+
+                        <a href="blog-detail.html" class="text-black">How to use lens combine light in the photography</a>
+                        <div class="date">August 29, 2023</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                    <div class="news-item ">
+                        <div class="image">
+                            <a href="#">
+                                <img src="assets/img/blog-image/news-11.webp" class="w-100"
+                                    alt="group of people"></a>
+                        </div>
+
+                        <div class="news-title mt-3">
+                            INSPIRATION
+                        </div>
+
+                        <a href="blog-detail.html" class="text-black">From animation to coding, easy or hard? 5 Things that you need to know about AE</a>
+                        <div class="date">August 20, 2023</div>
+                    </div>
+                </div>
+            </div>
+            <div class=" mt-5 d-flex justify-content-center number-box">
+                <ul class="clearfix d-flex mt-5">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li>...</li>
+                    <li><a href="#">15</a></li>
+                    <li><a href="#">16</a></li>
+                    <li class="next"><a href="#"><i class="fa-solid fa-angles-right"></i></a></li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="tab-pane fade" id="comm-tab-pane" role="tabpanel" aria-labelledby="comm-tab" tabindex="0">
+                
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                        <div class="news-item ">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="assets/img/blog-image/news-1.webp" class="w-100"
+                                        alt="group of people"></a>
+                            </div>
+
+                            <div class="news-title mt-3">
+                                INSPIRATION
+                            </div>
+
+                            <a href="blog-detail.html" class="text-black">How to improve the flow of UI/UX &amp;
+                                delivery its in your team in way effective</a>
+                            <div class="date">December 25, 2023</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                        <div class="news-item ">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="assets/img/blog-image/news-3.webp" class="w-100"
+                                        alt="group of people"></a>
+                            </div>
+
+                            <div class="news-title mt-3">
+                                COMMUNITY
+                            </div>
+
+                            <a href="blog-detail.html" class="text-black">How to choose stock photos fit with your project. Color, blending, restock, etc.</a>
+                            <div class="date">November 24, 2023</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                        <div class="news-item ">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="assets/img/blog-image/news-7.webp" class="w-100"
+                                        alt="group of people"></a>
+                            </div>
+
+                            <div class="news-title mt-3">
+                                COMMUNITY
+                            </div>
+
+                            <a href="blog-detail.html" class="text-black">Workflow & Enhance the User Experience with Design System</a>
+                            <div class="date">September 15, 2023</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                        <div class="news-item ">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="assets/img/blog-image/news-10.webp" class="w-100"
+                                        alt="group of people"></a>
+                            </div>
+    
+                            <div class="news-title mt-3">
+                                PRODUCTS
+                            </div>
+    
+                            <a href="blog-detail.html" class="text-black">Cocooil - Review</a>
+                            <div class="date">August 27, 2023</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                        <div class="news-item ">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="assets/img/blog-image/news-12.webp" class="w-100"
+                                        alt="group of people"></a>
+                            </div>
+    
+                            <div class="news-title mt-3">
+                                PRODUCTS
+                            </div>
+    
+                            <a href="blog-detail.html" class="text-black">How to combine Typography perfect for any design</a>
+                            <div class="date">August 16, 2023</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" mt-5 d-flex justify-content-center number-box">
+                    <ul class="clearfix d-flex mt-5">
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li>...</li>
+                        <li><a href="#">15</a></li>
+                        <li><a href="#">16</a></li>
+                        <li class="next"><a href="#"><i class="fa-solid fa-angles-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="others-tab-pane" role="tabpanel" aria-labelledby="others-tab" tabindex="0">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                    <div class="news-item ">
+                        <div class="image">
+                            <a href="#">
+                                <img src="assets/img/blog-image/news-1.webp" class="w-100"
+                                    alt="group of people"></a>
+                        </div>
+
+                        <div class="news-title mt-3">
+                            INSPIRATION
+                        </div>
+
+                        <a href="blog-detail.html" class="text-black">How to improve the flow of UI/UX &amp;
+                            delivery its in your team in way effective</a>
+                        <div class="date">December 25, 2023</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                    <div class="news-item ">
+                        <div class="image">
+                            <a href="#">
+                                <img src="assets/img/blog-image/news-3.webp" class="w-100"
+                                    alt="group of people"></a>
+                        </div>
+
+                        <div class="news-title mt-3">
+                            COMMUNITY
+                        </div>
+
+                        <a href="blog-detail.html" class="text-black">How to choose stock photos fit with your project. Color, blending, restock, etc.</a>
+                        <div class="date">November 24, 2023</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                    <div class="news-item ">
+                        <div class="image">
+                            <a href="#">
+                                <img src="assets/img/blog-image/news-5.webp" class="w-100"
+                                    alt="group of people"></a>
+                        </div>
+
+                        <div class="news-title mt-3">
+                            NEWS
+                        </div>
+
+                        <a href="blog-detail.html" class="text-black">ABC Launch New Digital eCommerce Experience for Niken Athletic</a>
+                        <div class="date">November 7, 2023</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                    <div class="news-item ">
+                        <div class="image">
+                            <a href="#">
+                                <img src="assets/img/blog-image/news-6.webp" class="w-100"
+                                    alt="group of people"></a>
+                        </div>
+
+                        <div class="news-title mt-3">
+                            PRODUCT
+                        </div>
+
+                        <a href="blog-detail.html" class="text-black">Obero become Winner of Best Portfolio Website 2019 on 99Design.com</a>
+                        <div class="date">November 3, 2023</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                    <div class="news-item ">
+                        <div class="image">
+                            <a href="#">
+                                <img src="assets/img/blog-image/news-8.webp" class="w-100"
+                                    alt="group of people"></a>
+                        </div>
+
+                        <div class="news-title mt-3">
+                            INSPIRATION
+                        </div>
+
+                        <a href="blog-detail.html" class="text-black">Predict Color Pantone 2023</a>
+                        <div class="date">September 4, 2023</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-4 pt-5">
+                    <div class="news-item ">
+                        <div class="image">
+                            <a href="#">
+                                <img src="assets/img/blog-image/news-10.webp" class="w-100"
+                                    alt="group of people"></a>
+                        </div>
+
+                        <div class="news-title mt-3">
+                            PRODUCTS
+                        </div>
+
+                        <a href="blog-detail.html" class="text-black">Cocooil - Review</a>
+                        <div class="date">August 27, 2023</div>
+                    </div>
+                </div>
+            </div>
+            <div class=" mt-5 d-flex justify-content-center number-box">
+                <ul class="clearfix d-flex mt-5">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li>...</li>
+                    <li><a href="#">15</a></li>
+                    <li><a href="#">16</a></li>
+                    <li class="next"><a href="#"><i class="fa-solid fa-angles-right"></i></a></li>
+                </ul>
+            </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!--start main-footer-->
+    <div class="main-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="footer-items">
+                    <h4 class="text-uppercase">office</h4>
+                    <ul class="p-0">
+                        <li><p>166 Main Street, Beverly Hills, CA, 90210<br>United States</p></li>
+                        <li><a href="mailto:hello@Oberostudio.co">hello@Oberostudio.co</a></li>
+                        <li><a href="tel:+0085-346-2188">+0085 346 2188</a></li>
+                    </ul>
+                    <div class="social-box w-25 py-4">
+
+                        <ul class=" d-flex p-0 ">
+                            <a href="https://twitter.com/">
+                                <li><i class="social-icon   fa-brands fa-twitter text-light "></i></li>
+                            </a>
+                            <a href="https://facebook.com/">
+                                <li><i class=" social-icon fa-brands fa-facebook text-light"></i></li>
+                            </a>
+                            <a href="https://google.com/">
+                                <li><i class=" social-icon fa-brands fa-google-plus-g text-light"></i></li>
+                            </a>
+                            <a href="https://www.behance.net/">
+                                <li><i class="social-icon   fa-brands fa-behance text-light "></i></li>
+                            </a>
+                            <a href="https://www.instagram.com/">
+                                <li><i class="social-icon   fa-brands fa-instagram text-light "></i></li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer-image">
+                    <a><img src="assets/img/contact-image/footer-logo.webp" alt="footer logo image"></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer-end">
+                    <h4 class="text-uppercase">
+                        twitter
+                    </h4>
+                    <div class="text-twitter">
+                        <p>Looking for a Creative PSD Template?<br>It here:<a href="#"> https://tf.net/OAWS890a</a></p>
+                        <div class="light-day text-uppercase d-flex justify-content-end">
+                            <a href="#"  class="pe-2 pt-1">
+                                <i class="social-icon con fa-brands fa-twitter text-light "></i>
+                            </a>
+                            <p> 2 days ago</p>
+                        </div>
+                    </div>
+                    <div class="text-twitter">
+                        <p>You need an image stock<br>It here:<a href="#">  https://uph.com/567AW1</a></p>
+                        <div class="light-day text-uppercase d-flex justify-content-end">
+                            <a href="#"  class="pe-2 pt-1">
+                                <i class="social-icon con  fa-brands fa-twitter text-light "></i>
+                            </a>
+                            <p> 4 days ago</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--start footer section-->
+    <footer class="d-flex justify-content-center">
+        <div class="footer-content d-flex">
+        <p>Copyright &copy; 2023 <span class="fw-bold text-uppercase" >obero</span>. Made with <i class="fa-solid fa-heart"></i> by </p>
+        <a href="https://hasthemes.com/" target="_blank" class="ms-1"> HasThemes</a>
+    </div>
+    </footer>
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets//js/main.js"></script>
+</body>
+
+</html>
